@@ -1,9 +1,3 @@
-/***************************************************************
- * File: ChessBoard.cs
- * Created By: Justin Grindal		Date: 29 June, 2013
- * Description: This class implements the acutal chess board UI.
- * This class handles drawing and events handling for the board
- ***************************************************************/
 using System;
 using System.Collections;
 using System.Windows.Forms;
