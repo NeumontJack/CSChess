@@ -64,8 +64,11 @@ namespace Chess
 					ChessSquar.SetBackgroundSquar(ChessImages);	// Set the chess squar background
 					Squars.Add(ChessSquar);
 					ParentForm.Controls.Add(ChessSquar);
+
 				}
 		}
+
+
 
 		// retunrs board squar for the given name
 		private Squar GetBoardSquar(string strCellName)

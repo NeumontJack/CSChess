@@ -13,13 +13,16 @@ using System.Collections;
 using System.Xml;
 using System.Xml.Serialization;
 using System.Security.Cryptography;
+using static ChessLibrary.Piece;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
 namespace ChessLibrary
 {
 	/// <summary>
 	/// This the main chess game class. It contains a chess board and two players. Also initialize and maintains the status of the game.
 	/// </summary>
-    [Serializable]
+
+[Serializable]
 	public class Game
 	{
 		// Define delegates used to communicate the chess events to the UI

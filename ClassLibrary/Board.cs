@@ -8,6 +8,7 @@
 
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Xml;
 
 namespace ChessLibrary
@@ -66,7 +67,22 @@ namespace ChessLibrary
 			m_cells["d8"].piece = new Piece(Piece.PieceType.Queen,m_WhiteSide);
 			for (int col=1; col<=8; col++)
 				m_cells[7, col].piece = new Piece(Piece.PieceType.Pawn,m_WhiteSide);
-		}
+
+            //if (Chess960Selected)
+            //{
+            //    Random rand = new Random();
+            //    List<string> pieceTypes = new List<string> { "Pawn", "Rook", "Knight", "Bishop", "Queen", "King" };
+            //    List<Piece> pieces = new List<Piece>();
+
+            //    for (int row = 0; row < 8; row++)  // Loop through rows
+            //    {
+            //        int randIndex = rand.Next(pieceTypes.Count);
+            //        string pieceType = pieceTypes[randIndex];
+            //        pieces.Add(new ChessPiece(pieceType, row, 0));  // Adding piece to the list with position (row, 0)
+            //        pieceTypes.RemoveAt(randIndex);
+            //    }
+            //}
+        }
 
 		// get the new item by rew and column
 		public Cell this[int row, int col]
